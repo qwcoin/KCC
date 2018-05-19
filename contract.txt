@@ -1,5 +1,5 @@
 pragma solidity ^0.4.16;
-contract TOO  {
+contract KCC  {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -17,12 +17,12 @@ contract TOO  {
      event Transfer(address indexed _from, address indexed _to, uint256 _value); 
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
    
-    function TOO() public {
-        balances[msg.sender] = 660000000000;               // Give the creator all initial tokens
-        totalSupply = 660000000000;                        // Update total supply
-        name = "TOO Coin";                                   // Set the name for display purposes
+    function KCC() public {
+        balances[msg.sender] = 18000000000000;               // Give the creator all initial tokens
+        totalSupply = 18000000000000;                        // Update total supply
+        name = "KCChain";                                   // Set the name for display purposes
         decimals =4;                            // Amount of decimals for display purposes
-        symbol = "TOO";                               // Set the symbol for display purposes
+        symbol = "KCC";                               // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
